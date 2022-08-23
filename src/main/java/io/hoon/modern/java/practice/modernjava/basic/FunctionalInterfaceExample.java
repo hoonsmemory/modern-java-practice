@@ -9,7 +9,8 @@ import java.util.function.Supplier;
 
 /**
  * Functional Interface
- * 인터페이스인데 그 안에 abstract method가 하나만 있는 경우
+ * 인터페이스인데 그 안에 abstract method가 하나만 있는 경우. (Single Abstract Method)
+ * @FunctionalInterface 가 적용되었을 경우 method가 두개 이상 있을 경우 오류를 발생시킨다.
  */
 public class FunctionalInterfaceExample {
 
