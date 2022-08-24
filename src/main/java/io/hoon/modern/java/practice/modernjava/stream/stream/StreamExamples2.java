@@ -5,11 +5,20 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * 스트림은 게으른 컬렉션 빌더이다.
+ * 스트림은 lazy iterator 다.
  * filter(), map() 등 여러 메서드가 조합되어 있더라도 메서드 한줄씩 실행하지 않고,
- * 최종적으로 빌더가 완성이 되었을 때 계산적으로 동작하므로 성능이 좋다.
+ * 최종적으로 stream이 완성이 되었을 때 계산적으로 동작하므로 성능이 좋다.
  * 스트림을 사용하면 에러날 확률이 적고 브레이크가 없고 NullPointerException 에 신경 쓸 일이 없다.
  *
+ * Intermediate Operation Method (중간처리 메서드)
+ * Stream을 리턴하기 때문에 계속 Method Chaining을 통해서 무엇을 해야할 지 스트림에게 지시할 수 있다.
+ * ex)filter(), map()..
+ * 리턴 타입 : Stream
+ *
+ * Terminal Operation Method(최종처리 메서드)
+ * 최종적으로 요청.
+ * ex)  findFirst(), average()..
+ * 리턴 타입 : Optional..
  */
 public class StreamExamples2 {
     public static void main(String[] args) {
