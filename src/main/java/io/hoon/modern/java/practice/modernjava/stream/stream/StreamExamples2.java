@@ -6,13 +6,14 @@ import java.util.Optional;
 
 /**
  * 스트림은 게으른 컬렉션 빌더이다.
- * filter(), map() 등 여러 메서드가 조합되어 있더라도 메서드 한줄씩 실행하지 않아 성능이 좋다.
- * 에러날 확률이 적고 브레이크가 없고 NullPointerException에 신경 쓸이 없다.
+ * filter(), map() 등 여러 메서드가 조합되어 있더라도 메서드 한줄씩 실행하지 않고,
+ * 최종적으로 빌더가 완성이 되었을 때 계산적으로 동작하므로 성능이 좋다.
+ * 스트림을 사용하면 에러날 확률이 적고 브레이크가 없고 NullPointerException 에 신경 쓸 일이 없다.
  *
  */
 public class StreamExamples2 {
     public static void main(String[] args) {
-        //계산 후 가장 먼저 출력되는 값 출력
+        //계산 후 가장 앞에 있는 인덱스 값 출력
         final List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
         Integer result = null;
