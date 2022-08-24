@@ -9,7 +9,7 @@ public class StreamExamples1 {
         IntStream.range(0, 10).forEach(i-> System.out.print(i + " "));
 
         /**
-         * 용BigInteger.ONE, i -> i.add(BigInteger.ONE))
+         * (BigInteger.ONE, i -> i.add(BigInteger.ONE))
          * BigInteger.ONE : 가장 첫 번째 값을 의미한다.
          * i -> i.add(BigInteger.ONE) : i는 첫 번째 값과 그 이후에 계산되는 값을 가진다.
          *                              i.add(BigInteger.ONE)는 1씩 더한다.
