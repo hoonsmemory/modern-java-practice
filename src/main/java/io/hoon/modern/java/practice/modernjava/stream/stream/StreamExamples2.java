@@ -19,6 +19,9 @@ import java.util.Optional;
  * 최종적으로 요청.
  * ex)  findFirst(), average()..
  * 리턴 타입 : Optional..
+ *
+ * 스트림에 값을 넣을 때는 Auto-Boxing 이 일어난다.
+ * ex) Stream.of(1) -> Integer.valueOf(1)
  */
 public class StreamExamples2 {
     public static void main(String[] args) {
